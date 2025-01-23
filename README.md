@@ -16,3 +16,8 @@ test\test_ui.py
  с UI-тестами.
 test\test_api.py
  с API-тестами.
+## Запуск тестов:
+pytest --alluredir=allure-results tests/test_api.py - запуск тестов api
+pytest --alluredir=allure-results tests/test_ui.py - запуск тестов ui
+allure serve allure-result - формирование отчета
+pytest --alluredir=allure-results - запуск всех тестов
